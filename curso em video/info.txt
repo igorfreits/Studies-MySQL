@@ -1,0 +1,57 @@
+-Instalação
+    mySQL Workbench/Community
+    WampServer
+
+-Banco de dados
+    Coleções de dados(Características separas organizados em locais específicos)
+    Tabelas(Locais específicos para armazenar dados) - Possuem Características semelhantes
+    Registros(Dados) - Possuem Características semelhantes
+
+-Tipos primitivos SQL
+    Numérico
+        -Inteiro(TinyInt, SmallInt, MediumInt, Int, BigInt) - Tamanho de bytes na memoria
+        -Real(Decimal, Float, Double)
+        -Logico(Bit, Boolean) - 1 ou 0, Sim e não
+
+    Data/Tempo
+        Date, DateTime, Time, Timestamp, Year
+
+    Literal
+        -Caractere(Char, VarChar) - Tamanho
+        -Texto(TinyText, SmallText, MediumText, Text, LongText) - Textos longos
+        -Binário(TinyBlob, SmallBlob, MediumBlob, Blob, LongBlob)
+        -Coleção(Enum, Set) - Valores permitidos
+
+    Espacial
+        Geometry, GeometryCollection, Point, LineString,
+        Polygon, MultiPoint, MultiLineString, MultiPolygon,
+        MultiPolygon, GeometryCollection
+
+-Criação do banco de dados
+    CREATE DATABASE 'nome_do_banco';
+
+-Criação do bando de dados com utf8
+    CREATE DATABASE 'nome_do_banco'
+    DEFAULT CHARACTER SET utf8
+    DEFAULT COLLATE utf8_general_ci;
+
+-Criação das tabelas(registros são compostos por campos)
+    USE nome_do_banco;
+    CREATE TABLE 'nome_tabela'(
+        'nome do campo' tipo primitivo
+
+    );
+    DESCRIBE 'nome_tabela'; - Mostra os campos da tabela
+    SHOW TABLES; - Mostra as tabelas do banco de dados
+
+    NOT NULL - O campo não pode ser nulo(Campo obrigatório)
+    
+    Todo caractere em SQL '' ou ""
+    Toda palavra de definição em SQL `
+
+-Deletar DATABASE
+    DROP DATABASE 'nome_do_banco';
+
+-Chaves primarias
+
+

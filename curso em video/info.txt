@@ -7,6 +7,9 @@
     Tabelas(Locais específicos para armazenar dados) - Possuem Características semelhantes
     Registros(Dados) - Possuem Características semelhantes
 
+    DDL - Data Definition Language - Linguagem de definição de dados
+    DML - Data Manipulation Language - Linguagem de manipulação de dados
+
 -Tipos primitivos SQL
     Numérico
         -Inteiro(TinyInt, SmallInt, MediumInt, Int, BigInt) - Tamanho de bytes na memoria
@@ -27,20 +30,28 @@
         Polygon, MultiPoint, MultiLineString, MultiPolygon,
         MultiPolygon, GeometryCollection
 
--Criação do banco de dados
+-Criação do banco de dados - DDL
     CREATE DATABASE 'nome_do_banco';
 
--Criação do bando de dados com utf8
+-Criação do banco de dados com utf8
     CREATE DATABASE 'nome_do_banco'
     DEFAULT CHARACTER SET utf8
     DEFAULT COLLATE utf8_general_ci;
 
--Criação das tabelas(registros são compostos por campos)
-    USE nome_do_banco;
-    CREATE TABLE 'nome_tabela'(
-        'nome do campo' tipo primitivo
+-Criação tabela com condição e utf8
+    CREATE TABLE IF NOT EXISTS 'nome_da_tabela' (
+        'nome_do_campo' tipo primitivo,
+        'nome_do_campo' tipo primitivo
+    ) DEFAULT CHARSET + utf8;
 
+-Criação das tabelas(registros são compostos por campos) - DDL
+    USE nome_do_banco; - Seleciona o banco de dados
+
+    CREATE TABLE 'nome_tabela'(
+        'nome do campo' tipo primitivo,
+        'nome_do_campo' tipo primitivo
     );
+
     DESCRIBE 'nome_tabela'; - Mostra os campos da tabela
     SHOW TABLES; - Mostra as tabelas do banco de dados
 
@@ -52,6 +63,45 @@
 -Deletar DATABASE
     DROP DATABASE 'nome_do_banco';
 
--Chaves primarias
+-Inserir dados - DML
+    INSERT INTO 'nome_tabela'
+    ('nome_do_campo')
+    VALUES
+    ('valores');
 
+    INSERT INTO 'nome_tabela' VALUES
+    ('valores'), - Insere mais de um registro
+    ('valores'),
+    ('valores'),
+    ('valores');
 
+    SELECT * FROM 'nome_tabela'; - Mostra os dados da tabela
+
+-Alterar tabela(Adicionar e excluir) - Não precisa do COLUMN - DDL
+    ALTER TABLE 'nome_tabela'
+    ADD COLUMN 'nome_do_campo' tipo primitivo; - Adiciona no final
+
+    ALTER TABLE 'nome_tabela'
+    ADD COLUMN 'nome_do_campo' tipo primitivo AFTER 'nome_do_campo'; - Adiciona depois de um campo
+
+    ALTER TABLE 'nome_tabela'
+    ADD 'nome_do_campo tipo primitivo FIRST'; - Adiciona no inicio
+
+    ALTER TABLE 'nome_tabela'
+    DROP COLUMN 'nome_do_campo' - Exclui
+
+    DROP TABLE 'nome_tabela'; - Exclui a tabela - DDL
+    DROP TABLE IF EXISTS 'nome_tabela'; - Exclui a tabela se existir
+
+-Alterar estrutura - DDL
+    ALTER TABLE 'nome_tabela'
+    MODIFY COLUMN 'nome_do_campo tipo primitivo; - Altera o tipo primitivo
+
+    ALTER TABLE 'nome_tabela'
+    CHANGE COLUMN 'nome_do_campo' 'novo_nome_do_campo' tipo primitivo; -Altera nome e tipo primitivo
+
+    ALTER TABLE 'nome_tabela'
+    RENAME TO 'novo_nome_tabela
+
+    ALTER TABLE 'nome_tabela'
+    ADD PRIMARY KEY ('nome_do_campo'); - Adiciona chave primária

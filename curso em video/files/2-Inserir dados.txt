@@ -1,0 +1,14 @@
+-Inserir dados - DML
+    INSERT INTO 'nome_tabela'
+    ('nome_do_campo')
+    VALUES
+    ('valores');
+
+    INSERT INTO 'nome_tabela' VALUES
+    ('valores'), - Insere mais de um registro
+    ('valores'),
+    ('valores'),
+    ('valores');
+
+    SELECT * FROM 'nome_tabela'; - Mostra os dados da tabela
+    

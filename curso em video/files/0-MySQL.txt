@@ -1,0 +1,31 @@
+-Instalação
+    mySQL Workbench/Community
+    WampServer
+
+-Banco de dados
+    Coleções de dados(Características separas organizados em locais específicos)
+    Tabelas(Locais específicos para armazenar dados) - Possuem Características semelhantes
+    Registros(Dados) - Possuem Características semelhantes
+
+    DDL - Data Definition Language - Linguagem de definição de dados
+    DML - Data Manipulation Language - Linguagem de manipulação de dados
+
+-Tipos primitivos SQL
+    Numérico
+        -Inteiro(TinyInt, SmallInt, MediumInt, Int, BigInt) - Tamanho de bytes na memoria
+        -Real(Decimal, Float, Double)
+        -Logico(Bit, Boolean) - 1 ou 0, Sim e não
+
+    Data/Tempo
+        Date, DateTime, Time, Timestamp, Year
+
+    Literal
+        -Caractere(Char, VarChar) - Tamanho
+        -Texto(TinyText, SmallText, MediumText, Text, LongText) - Textos longos
+        -Binário(TinyBlob, SmallBlob, MediumBlob, Blob, LongBlob)
+        -Coleção(Enum, Set) - Valores permitidos
+
+    Espacial
+        Geometry, GeometryCollection, Point, LineString,
+        Polygon, MultiPoint, MultiLineString, MultiPolygon,
+        MultiPolygon, GeometryCollection

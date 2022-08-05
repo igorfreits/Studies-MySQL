@@ -1,0 +1,32 @@
+-Criação do banco de dados - DDL
+    CREATE DATABASE 'nome_do_banco';
+
+-Criação do banco de dados com utf8
+    CREATE DATABASE 'nome_do_banco'
+    DEFAULT CHARACTER SET utf8
+    DEFAULT COLLATE utf8_general_ci;
+
+-Criação tabela com condição e utf8
+    CREATE TABLE IF NOT EXISTS 'nome_da_tabela' (
+        'nome_do_campo' tipo primitivo,
+        'nome_do_campo' tipo primitivo
+    ) DEFAULT CHARSET + utf8;
+
+-Criação das tabelas(registros são compostos por campos) - DDL
+    USE nome_do_banco; - Seleciona o banco de dados
+
+    CREATE TABLE 'nome_tabela'(
+        'nome do campo' tipo primitivo,
+        'nome_do_campo' tipo primitivo
+    );
+
+    DESCRIBE 'nome_tabela'; - Mostra os campos da tabela
+    SHOW TABLES; - Mostra as tabelas do banco de dados
+
+    NOT NULL - O campo não pode ser nulo(Campo obrigatório)
+    
+    Todo caractere em SQL '' ou ""
+    Toda palavra de definição em SQL `
+
+-Deletar DATABASE
+    DROP DATABASE 'nome_do_banco';

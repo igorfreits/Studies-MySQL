@@ -1,0 +1,10 @@
+-Criar Backup (Dump)
+    Server-Data Export
+    Escolher BD e tabelas
+    Incluir o BD (Include Create Schema)
+    Exportar...
+
+-Importa BD
+    Server-Data Import
+    Escolher BD e tabelas
+    Importar...

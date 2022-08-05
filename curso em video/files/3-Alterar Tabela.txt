@@ -1,0 +1,28 @@
+-Alterar tabela(Adicionar e excluir) - Não precisa do COLUMN - DDL
+    ALTER TABLE 'nome_tabela'
+    ADD COLUMN 'nome_do_campo' tipo primitivo; - Adiciona no final
+
+    ALTER TABLE 'nome_tabela'
+    ADD COLUMN 'nome_do_campo' tipo primitivo AFTER 'nome_do_campo'; - Adiciona depois de um campo
+
+    ALTER TABLE 'nome_tabela'
+    ADD 'nome_do_campo tipo primitivo FIRST'; - Adiciona no inicio
+
+    ALTER TABLE 'nome_tabela'
+    DROP COLUMN 'nome_do_campo' - Exclui
+
+    DROP TABLE 'nome_tabela'; - Exclui a tabela - DDL
+    DROP TABLE IF EXISTS 'nome_tabela'; - Exclui a tabela se existir
+
+-Alterar estrutura - DDL
+    ALTER TABLE 'nome_tabela'
+    MODIFY COLUMN 'nome_do_campo tipo primitivo; - Altera o tipo primitivo
+
+    ALTER TABLE 'nome_tabela'
+    CHANGE COLUMN 'nome_do_campo' 'novo_nome_do_campo' tipo primitivo; -Altera nome e tipo primitivo
+
+    ALTER TABLE 'nome_tabela'
+    RENAME TO 'novo_nome_tabela
+
+    ALTER TABLE 'nome_tabela'
+    ADD PRIMARY KEY ('nome_do_campo'); - Adiciona chave primária

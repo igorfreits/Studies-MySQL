@@ -1,0 +1,13 @@
+-Atualizar registros da tabela - DML
+    UPDATE 'nome_tabela'
+    SET 'nome_coluna' = 'novo_valor', 'nome_tabela' = 'novo_valor
+    WHERE 'nome_coluna' = 'valor_coluna'
+    LIMIT 1; - Limita para ser feito em apenas um registro
+
+-Apagar registros da tabela - DML
+    DELETE 'nome_tabela'
+    WHERE 'nome_coluna' = 'valor_coluna';
+    LIMIT 1;
+
+-Apagar todos os registros da tabela - DML
+    TRUNCATE 'nome_tabela';

@@ -8,16 +8,16 @@
 
 -Criação tabela com condição e utf8
     CREATE TABLE IF NOT EXISTS 'nome_da_tabela' (
-        'nome_do_campo' tipo primitivo,
-        'nome_do_campo' tipo primitivo
-    ) DEFAULT CHARSET + utf8;
+        'nome_do_campo' TIPO PRIMITIVO,
+        'nome_do_campo' TIPO PRIMITIVO
+    ) DEFAULT CHARSET = utf8;
 
--Criação das tabelas(registros são compostos por campos) - DDL
+-Criação das tabelas com chave primaria(registros são compostos por campos) - DDL
     USE nome_do_banco; - Seleciona o banco de dados
 
     CREATE TABLE 'nome_tabela'(
-        'nome do campo' tipo primitivo,
-        'nome_do_campo' tipo primitivo
+        'nome do campo' TIPO PRIMITIVO primary key,
+        'nome_do_campo' 
     );
 
     DESCRIBE 'nome_tabela'; - Mostra os campos da tabela

@@ -1,12 +1,12 @@
 -Alterar tabela(Adicionar e excluir) - Não precisa do COLUMN - DDL
     ALTER TABLE 'nome_tabela'
-    ADD COLUMN 'nome_do_campo' tipo primitivo; - Adiciona no final
+    ADD COLUMN 'nome_do_campo' TIPO PRIMITIVO; - Adiciona no final
 
     ALTER TABLE 'nome_tabela'
-    ADD COLUMN 'nome_do_campo' tipo primitivo AFTER 'nome_do_campo'; - Adiciona depois de um campo
+    ADD COLUMN 'nome_do_campo' TIPO PRIMITIVO AFTER 'nome_do_campo'; - Adiciona depois de um campo
 
     ALTER TABLE 'nome_tabela'
-    ADD 'nome_do_campo tipo primitivo FIRST'; - Adiciona no inicio
+    ADD 'nome_do_campo TIPO PRIMITIVO FIRST'; - Adiciona no inicio
 
     ALTER TABLE 'nome_tabela'
     DROP COLUMN 'nome_do_campo' - Exclui
@@ -16,10 +16,10 @@
 
 -Alterar estrutura - DDL
     ALTER TABLE 'nome_tabela'
-    MODIFY COLUMN 'nome_do_campo tipo primitivo; - Altera o tipo primitivo
+    MODIFY COLUMN 'nome_do_campo TIPO PRIMITIVO; - Altera o TIPO PRIMITIVO
 
     ALTER TABLE 'nome_tabela'
-    CHANGE COLUMN 'nome_do_campo' 'novo_nome_do_campo' tipo primitivo; -Altera nome e tipo primitivo
+    CHANGE COLUMN 'nome_do_campo' 'novo_nome_do_campo' TIPO PRIMITIVO; -Altera nome e TIPO PRIMITIVO
 
     ALTER TABLE 'nome_tabela'
     RENAME TO 'novo_nome_tabela

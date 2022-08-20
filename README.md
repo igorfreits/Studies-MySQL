@@ -1,11 +1,15 @@
 ## 📚 Meus estudos
 
-Aqui estão localizados meu estudos sobre o MySQL
+Aqui estão localizados meu estudos sobre o Banco de dados
 e nele você ira encontrar o seguinte:
 
-...
-
-
+    -Base de dados relacionais (MySQl);
+    -CRUD;
+    -Criação de banco de dados;
+    -Criação de tabelas;
+    -Leitura de dados;
+    -Atualização de banco de dados;
+    -Deletar de dados.
 
 ## 🚀 Começando em programação
         Atualmente com 23 anos e possuo interesse em Tecnologia desde que me lembro. Na infância, quando 

@@ -1,0 +1,28 @@
+SELECT - DML ou DQL
+-Organizar Colunas
+    SELECT * FROM 'nome_tabla'
+    ORDER BY 'nome_coluna';
+    ORDER BY 'nome_coluna' DESC; - DESC - decrescente
+    ORDER BY 'nome_coluna' ASC; - ASC - crescente
+
+-Organizar Linhas
+    SELECT * FROM 'nome_tabela'
+    WHERE 'nome_coluna' <> 'valor_coluna'
+    (Pode usar operações relacionais) <> - Diferente
+    ORDER BY 'nome_coluna';
+    
+-Entre valores
+    SELECT * FROM 'nome_tabela'
+    WHERE 'nome_coluna' BETWEEN 'valor_minimo' AND 'valor_maximo';
+
+-IN
+    SELECT * FROM 'nome_tabela'
+    WHERE 'nome_coluna' IN ('valor_1', 'valor_2', 'valor_3');
+
+-AND
+    SELECT * FROM 'nome_tabela'
+    WHERE 'nome_coluna' > 'valor_1' and 'nome_coluna' < 'valor_2';
+
+-OR
+    SELECT * FROM 'nome_tabela'
+    WHERE 'nome_coluna' > 'valor_1' OR 'nome_coluna' < 'valor_2';

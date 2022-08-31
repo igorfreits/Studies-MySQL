@@ -9,6 +9,7 @@
 
     DDL - Data Definition Language - Linguagem de definição de dados
     DML - Data Manipulation Language - Linguagem de manipulação de dados
+    DQL - Data Query Language - Linguagem de consulta de dados
 
 -Tipos primitivos SQL
     Numérico

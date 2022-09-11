@@ -1,4 +1,4 @@
-SELECT - DML ou DQL
+SELECT - DML ou DQL - Parte 1
 -Organizar Colunas
     SELECT * FROM 'nome_tabla'
     ORDER BY 'nome_coluna';

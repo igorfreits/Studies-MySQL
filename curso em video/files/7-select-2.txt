@@ -1,0 +1,48 @@
+SELECT - DML ou DQL - Parte 2
+
+-Wildcards
+    LIKE - Exibi todos os campos que iniciem com a letra especifica
+        LIKE - Parecido, % - Nenhum ou vários caracteres
+        Funciona com operadores
+
+        Começa com
+            SELECT * FROM 'nome_tabela'
+            WHERE 'nome_coluna' LIKE 'letra%';
+
+        Termina com
+            SELECT * FROM 'nome_tabela'
+            WHERE 'nome_coluna' LIKE '%letra';
+
+        Tem a letra no campo
+            SELECT * FROM 'nome_tabela'
+            WHERE 'nome_coluna' LIKE '%letra%';
+
+        Começa com e termina com
+            SELECT * FROM 'nome_tabela'
+            WHERE 'nome_coluna' LIKE 'letra%letra';
+        
+        Algo no valor - Obrigado ter caractere
+            SELECT * FROM 'nome_tabela'
+            WHERE 'nome_coluna' LIKE 'letra%letra_';
+
+-Distinguindo
+    DISTINCT - Exibi apenas um valor mesmo tendo vários valores repetidos
+    SELECT DISTINCT 'nome_coluna' FROM 'nome_tabela';
+
+-Agregações
+    Selecionar ou totalizar
+
+    Exibi quantos valores existem
+        SELECT COUNT(*) FROM 'nome_tabela';
+        SELECT COUNT('nome_coluna') FROM 'nome_tabela';
+    Maior valor
+        SELECT MAX(nome_coluna) FROM 'nome_tabela';
+
+    Menor valor
+        SELECT MIN(nome_coluna) FROM 'nome_tabela';
+    
+    Soma valores
+        SELECT SUM(nome_coluna) FROM 'nome_tabela';
+
+    MEDIA
+        SELECT AVG(nome_coluna) FROM 'nome_tabela';

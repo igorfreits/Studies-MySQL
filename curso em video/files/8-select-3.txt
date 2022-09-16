@@ -1,0 +1,12 @@
+SELECT - DML ou DQL - Parte 3
+
+-Agrupar
+    SELECT 'nome_coluna' FROM 'nome_tabela GROUP BY 'nome_coluna';
+
+-HAVING(Usado para filtrar os dados somente pela coluna de escolha no GROUP BY)
+    SELECT 'nome_coluna' FROM 'nome_tabela GROUP BY 'nome_coluna' HAVING 'nome_coluna' = 'valor';
+    
+    SELECT 'nome_coluna', COUNT(*) FROM 'nome_''tabela'
+    WHERE ANO > 2015
+    GROUP BY 'nome_coluna'
+    HAVING 'nome_coluna' > (SELECT AVG('nome_coluna') FROM 'nome_tabela');

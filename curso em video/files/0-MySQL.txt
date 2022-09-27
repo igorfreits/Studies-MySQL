@@ -1,15 +1,55 @@
 -Instalação
     mySQL Workbench/Community
     WampServer
-
+    
 -Banco de dados
     Coleções de dados(Características separas organizados em locais específicos)
     Tabelas(Locais específicos para armazenar dados) - Possuem Características semelhantes
     Registros(Dados) - Possuem Características semelhantes
 
-    DDL - Data Definition Language - Linguagem de definição de dados
-    DML - Data Manipulation Language - Linguagem de manipulação de dados
-    DQL - Data Query Language - Linguagem de consulta de dados
+    Entidades - Tabelas
+    Atributos - Colunas
+    Relacionamentos - Chaves estrangeiras
+
+    Chave primária - Identificador único de cada registro
+    Chave estrangeira - Identificador único de cada registro de outra tabela
+    
+-DER - Diagrama Entidade Relacionamento
+    retângulo - Entidade
+    losango - Relacionamento
+    oval - Atributo
+    seta - Relacionamento
+    linha pontilhada - Relacionamento opcional
+
+-Cardinalidade - Número de registros de uma tabela que podem estar relacionados com um registro de outra tabela
+    linha tracejada - Relacionamento 1 para 1
+        EX: "1" cliente pode ter "1" pedido
+    linha cheia - Relacionamento 1 para N
+        EX: "1" cliente pode ter "Muitos" pedidos
+    linha dupla - Relacionamento N para N
+        EX: "Muitos" clientes podem ter "Muitos" pedidos
+
+-Comandos DDL
+    -DDL - Data Definition Language - Linguagem de definição de dados
+        CREATE - Criação de tabelas
+        ALTER - Alteração de tabelas
+        DROP - Exclusão de tabelas
+    
+-Comandos DML
+    -DML - Data Manipulation Language - Linguagem de manipulação de dados
+        INSERT - Inserção de dados
+        UPDATE - Atualização de dados
+        DELETE - Exclusão de dados
+
+-Comandos DQL
+    -DQL - Data Query Language - Linguagem de consulta de dados
+        SELECT - Seleção de dados
+
+-CRUD
+    CREATE - Criação de registros
+    READ - Leitura de registros
+    UPDATE - Atualização de registros
+    DELETE - Exclusão de registros
 
 -Tipos primitivos SQL
     Numérico

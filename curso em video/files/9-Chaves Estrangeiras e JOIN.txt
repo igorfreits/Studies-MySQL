@@ -1,0 +1,47 @@
+-Transação
+    ACID (Atomicidade, Consistência, Isolamento, Durabilidade)
+
+        A - Atomicidade: Todas as operações devem ser executadas ou nenhuma
+
+        C - Consistência: O banco de dados deve permanecer consistente
+
+        I - Isolamento: As transações devem ser isoladas uma das outras
+
+        D - Durabilidade: Os efeitos de uma transação devem ser duravelmente armazenados
+
+-Engine
+    INODB (Transações, Chaves Primárias, Chaves Estrangeiras, Índices, Tabelas)
+
+        T - Transações: O banco de dados deve suportar transações
+
+        P - Chaves Primárias: O banco de dados deve suportar chaves primárias
+
+        E - Chaves Estrangeiras: O banco de dados deve suportar chaves estrangeiras
+
+        I - Índices: O banco de dados deve suportar índices
+
+        B - Tabelas: O banco de dados deve suportar tabelas
+
+-Chaves Estrangeiras
+    Pode ter nome diferente, mas precisa ter o mesmo tipo de dado
+
+    -Adicionar  a Foreign Key
+        ALTER TABLE `nome_tabela`
+        ADD COLUMN 'nome_do_campo' TIPO PRIMITIVO; - Adiciona o campo
+
+        ALTER TABLE `nome_tabela`
+        ADD FOREIGN KEY ('nome_do_campo')
+        REFERENCES 'nome_tabela'('nome_do_campo'); - Adiciona a chave estrangeira
+
+-Integridade Referencial
+    -Restrição de integridade
+    -Restrição de integridade de chave estrangeira
+    -Restrição de integridade de chave estrangeira de exclusão
+    -Restrição de integridade de chave estrangeira de atualização
+
+-JOIN
+    -INNER JOIN - Retorna registros que tenham valores correspondentes em ambas as tabelas (padrão)
+    -OUTER JOIN - Retorna todos os registros de uma tabela, mesmo que não haja correspondência na outra tabela(Opcional)
+    -LEFT JOIN - Retorna registros que tenham valores correspondentes na tabela da esquerda
+    -RIGHT JOIN - Retorna registros que tenham valores correspondentes na tabela da direita
+    -FULL JOIN - Retorna todos os registros quando houver correspondência em pelo menos uma das tabelas

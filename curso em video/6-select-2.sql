@@ -1,3 +1,4 @@
+-- Active: 1659878189229@@127.0.0.1@3306@cadastro
 select * from cursos
 where nome like 'p%';
 

@@ -1,0 +1,6 @@
+-Junções
+    SELECT * FROM nome_tabela
+    JOIN nome_tabela
+    ON nome_tabela.id = nome_tabela
+    JOIN nome_tabela
+    ON nome_tabela.id = nome_tabela;
